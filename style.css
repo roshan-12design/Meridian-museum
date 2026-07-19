@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Uses clean, modern system fonts perfect for a beginner project */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #15130f;
+    color: #efe7d8;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* --- Header & Navigation --- */
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    width: 95%;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    background-color: #1e1a1589;
+    border: 1px solid #1e1a1589;
+    border-radius: 8px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;  
+    list-style: none; 
+    gap: 1.8rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #efe7d8;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.2s;
+}
+
+header ul li a:hover {
+    color: #c79641;
+}
+
+.inav {
+    display: flex;
+    gap: 0.4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.mer {
+    color: #d4ac6e;
+}
+
+/* --- Hero / Welcome Section --- */
+.head {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 900px;
+    margin: 3.5rem auto;
+    text-align: center;
+    background: linear-gradient(180deg, #1e1a15 0%, #15130f 100%);
+    gap: 1.8rem;    
+    border: 1px solid #d4ac6e;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+}
+
+.est {
+    font-size: 0.9rem;
+    color: #d4ac6e;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.obg {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.obg i {
+    color: #c79641;
+}
+
+main .head p {
+    color: #c9bfa9;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Dropdown / Interactive Details --- */
+.museums {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #c79641;
+    background-color: #c79641;
+    color: #15130f;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.museums:hover {
+    transform: translateY(-2px);
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.museums ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: #1e1a15;
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+    list-style: none;
+}
+
+.museums ul li a {
+    text-decoration: none;
+    color: #c9bfa9;
+    font-size: 0.95rem;
+}
+
+.museums ul li a:hover {
+    color: #c79641;
+    text-decoration: underline;
+}
+
+/* --- Collection Header --- */
+.collect1 {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #d4ac6e;
+    padding: 1.5rem 2.5%;
+    gap: 20px;
+}
+
+.collect1 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.collect1 p {
+    color: #c9bfa9;
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+/* --- Collection Grid --- */
+#collect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 2rem 2.5%;
+}
+
+.parent {
+    padding: 20px;
+    border: 1px solid #d4ac6e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #1e1a15b3;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.parent:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.parent span {
+    color: #c0964d;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.parent h1 {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.parent p {
+    color: #c9bfa9;
+    font-size: 0.9rem;
+}
+
+.parent .child {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.parent .child img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Featured Object Section --- */
+.famous {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin: 5rem auto;
+    width: 95%;
+    padding: 2.5rem;
+    background-color: #1e1a1570;
+    border: 1px solid #c0964d;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.famous img {
+    width: 40%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #c0964d;
+}
+
+.fam {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.famous .desript {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.famous .desript span {
+    color: #c79641;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.famous h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.famous .desript p {
+    color: #c9bfa9;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c0964d33;
+}
+
+.func ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.func ul li {
+    font-size: 0.9rem;
+}
+
+.func ul li span {
+    color: #c79641;
+    font-weight: 600;
+}
+
+/* --- Facts Section --- */
+.fact {
+    margin: 5rem auto;
+    width: 95%;
+}
+
+.child-fact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.child-fact h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.child-fact p {
+    color: #c9bfa9;
+    font-size: 1rem;
+}
+
+.fact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 1.5rem;
+    border-top: 1px solid #c79641;
+    list-style: none;
+}
+
+.fact ul li {
+    border: 1px solid #c79641;
+    background-color: #1e1a15;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+}
+
+.fact span {
+    color: #c79641;
+    font-weight: 600;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid #c79641;
+    background-color: #1a1612;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #c79641;
+    color: #15130f;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: #d4ac6e;
+}
+
+/* --- Layout Responsiveness (Mobile & Tablets) --- */
+@media (max-width: 900px) {
+    .famous {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .famous img, .fam {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    header nav ul {
+        gap: 1.2rem;
+    }
+
+    .obg {
+        font-size: 2rem;
+    }
+    
+    .collect1, .child-fact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .collect1 h1, .child-fact h1 {
+        font-size: 2rem;
+    }
+}
