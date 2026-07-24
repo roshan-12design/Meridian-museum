@@ -11,7 +11,9 @@ These styles are only for visualising purpose.
 Hovers,animation ,fonts and colors all are of the theme of old traditional things.
 
 • Collection :
+
 various collection like 
+
 1.Old sculpture
 
 2.crafts
