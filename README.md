@@ -29,6 +29,9 @@ It was hard to make responsive first time. After seeing tutorial made the websit
 <img width="326" height="573" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/edff46bb-7776-438c-9a98-a750e091244c" />
 
 
+•AI Usage:
+Used Ai for some understanding like detailes , summary tags to make a button containing things without use of java script.
+And for the English quotes like in header.
 
 • Footer :
 Contact for more information on 
