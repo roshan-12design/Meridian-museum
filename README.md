@@ -8,7 +8,7 @@ This also contains a button consisting 5 most famous museum website url.
 
 • Styles :
 These styles are only for visualising purpose.
-Hovers,animation ,fonts and colrs all are of 5he theme of old traditional things.
+Hovers,animation ,fonts and colrs all are of the theme of old traditional things.
 
 • Collection :
 various collection like 
